@@ -37,6 +37,8 @@ h1 {
 h2 {
   font-size: 2.7rem;
   transform: uppercase;
+  letter-spacing: -0.07em;
+  color: var(--color-primary);
 }
 
 h3 {
@@ -54,10 +56,20 @@ h4 {
   margin-bottom: 10px;
 }
 
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 ul {
+  list-style: none;
   display: flex;
 }
 
+ul li {
+  list-style: none;
+}
 
 ul.list {
   display: inline-block;
@@ -100,8 +112,8 @@ a {
 
 .btn--secondary {
   color: var(--color-secondary);
-  background-color: tansparent;
   background-repeat: no-repeat;
+  background: transparent;
   padding: 1.3rem 3.3rem;
   border: 1px solid var(--color-secondary);
   overflow: hidden;
@@ -202,6 +214,133 @@ nav__tel {
   margin-bottom: 3rem;
 }
 
+/*Completed Projects*/
+
+.projects {
+  padding: 107px 0 414px;
+  background-color: black;
+  color: var(--color-secondary);
+}
+
+.projects .locations {
+  display: flex;
+  margin-left: 50%;
+  margin-bottom: 45px;
+}
+
+.projects .locations ul {
+  padding: 0;
+}
+
+.one,
+.two {
+  list-style: none;
+  margin-right: 30px;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+a:hover,
+a.active {
+  color: var(--color-primary);
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--color-primary);
+  transition: 0.3s ease-in-out;
+}
+
+.projects .content {
+  display: flex;
+  margin: 0 42px;
+}
+
+.projects .content .project-description {
+  flex-basis: 50%;
+  padding-right: 50px;
+  display: grid;
+
+}
+
+.heading_three {
+  color: var(--color-primary);
+}
+
+.projects-p {
+  display: block;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.project-image {
+  display: block;
+  margin: auto;
+  flex-basis: 50%;
+
+}
+
+.projects .content .project-description .project-details {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 auto 80px;
+}
+
+.projects .content .project-description .project-details .project-features {
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.projects .content .project-description .project-details .project-features span {
+  display: inline-block;
+}
+
+.projects .content .project-description .project-details .project-features span.city-text {
+  max-width: 100px;
+}
+
+.projects .content .project-description .project-details .project-features span.city-text.narrow {
+  max-width: 50px;
+}
+
+.projects .content .project-description .slider-navigation {
+  display: inline-block;
+}
+
+.projects .content .project-description .slider-navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
+.projects .content .project-description .slider-navigation ul li {
+  display: inline-block;
+}
+
+.projects .content .project-description .slider-navigation ul li a .arrow.left {
+  margin-right: 12px;
+}
+
+.projects .content .project-description .slider-navigation ul li a .arrow.right {
+  margin-left: 12px;
+}
+
+.projects .content .project-description .slider-navigation ul li .arrow img {
+  width: 43px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.projects .content .project-description .slider-navigation ul li .dot {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin: 0 9px;
+  width: 10px;
+}
+
+
+
+
 /*Block repair types*/
 
 .services {
@@ -267,6 +406,8 @@ nav__tel {
   line-height: 2.5rem;
   text-transform: uppercase;
 }
+
+
 
 
 
