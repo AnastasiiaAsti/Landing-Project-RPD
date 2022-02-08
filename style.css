@@ -243,12 +243,14 @@ nav__tel {
   color: var(--color-secondary);
 }
 
-a:hover,
-a.active {
+.one:hover,
+.two:hover,
+.one.active,
+.two.active {
   color: var(--color-primary);
   padding-bottom: 7px;
   border-bottom: 1px solid var(--color-primary);
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .projects .content {
@@ -277,7 +279,6 @@ a.active {
   display: block;
   margin: auto;
   flex-basis: 50%;
-
 }
 
 .projects .content .project-description .project-details {
@@ -303,42 +304,10 @@ a.active {
   max-width: 50px;
 }
 
-.projects .content .project-description .slider-navigation {
-  display: inline-block;
+.dot,
+.right {
+  padding-left: 20px;
 }
-
-.projects .content .project-description .slider-navigation ul {
-  padding: 0;
-  margin: 0;
-}
-
-.projects .content .project-description .slider-navigation ul li {
-  display: inline-block;
-}
-
-.projects .content .project-description .slider-navigation ul li a .arrow.left {
-  margin-right: 12px;
-}
-
-.projects .content .project-description .slider-navigation ul li a .arrow.right {
-  margin-left: 12px;
-}
-
-.projects .content .project-description .slider-navigation ul li .arrow img {
-  width: 43px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.projects .content .project-description .slider-navigation ul li .dot {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  display: inline-block;
-  height: 10px;
-  margin: 0 9px;
-  width: 10px;
-}
-
-
 
 
 /*Block repair types*/
