@@ -128,6 +128,10 @@ a {
   margin-left: 2rem;
 }
 
+.btn--submit {
+  
+}
+
 /*NavBar*/
 
 .header {
@@ -217,7 +221,7 @@ nav__tel {
 /*Completed Projects*/
 
 .projects {
-  padding: 107px 0 414px;
+  padding: 107px 0 214px;
   background-color: black;
   color: var(--color-secondary);
 }
@@ -307,6 +311,136 @@ nav__tel {
 .dot,
 .right {
   padding-left: 20px;
+}
+
+/*Online control block*/
+
+.online_control {
+  margin-top: -550px;
+}
+
+.wrap {
+  text-align: center;
+  margin: auto;
+  max-width: 817px;
+}
+
+.break-line {
+  width: 55px;
+  border-top: 1px solid var(--color-primary);
+  border-radius: 30px;
+  border-bottom: 0;
+}
+
+.online_control .wrap p {
+  font-size: 16px;
+  line-height: 37px;
+  color: var(--color-body-light);
+  margin: 25px 84px 91px 84px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input {
+  text-align: left;
+}
+
+.form-input label {
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.online_control .wrap form .form-group .form-input label input {
+  display: flex;
+  border: 0;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  border-radius: 0;
+  padding: 12px 14px 12px 0;
+  max-width: 231px;
+  color: var(--color-body-light);
+}
+
+.online_control .wrap form .form-group .form-input label input::placeholder {
+  color: #363636;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.form-checkbox {
+  margin-top: 34px;
+}
+
+.checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 29px;
+  font-size: 14px;
+}
+
+.checkbox-label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  height: 18px;
+  width: 18px;
+  border-radius: 1px;
+  border: 1px solid var(--color-primary);
+}
+
+.checkbox-label .checkbox-custom:before {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 12px;
+  height: 0px;
+  width: 0px;
+  border: 1px solid var(--color-primary)
+}
+
+.checkbox-label .checkbox-custom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  height: 5px;
+  width: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.online_control .wrap form .form-checkbox input[type=checkbox] {
+  display: none;
+}
+
+.online_control .wrap form .form-checkbox input[type=checkbox]:checked + label:before {
+  background: var(--color-primary);
+  border-radius: 1px;
+}
+
+.online-control .wrap input {
+  width: 100%;
+  font-size: 13px;
+  height: 50px;
+  line-height: 51px;
+  border-radius: 4px;
+  color: #000;
+  outline: none;
+  padding: 0 20px;
+  transition: all 0.2s;
+  box-shadow: none;
+  border: 1px solid var(--color-secondary);
 }
 
 
