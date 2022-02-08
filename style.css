@@ -510,8 +510,186 @@ nav__tel {
   text-transform: uppercase;
 }
 
+/*Leave the comment block*/
 
+.estimate-form {
+  margin: 230px auto 14px auto;
+  display: flex;
+  max-height: 539px;
+}
 
+.estimate-features {
+  flex-basis: 60%;
+}
 
+.estimate-features-list {
+  margin-left: 20%;
+  max-width: 70%;
+}
+
+.estimate-features-list .item {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 39px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.item-number {
+  content: "";
+  background: var(--color-primary);
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  padding: 24px;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFFFFF;
+  border: 8px solid #ffffff;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
+}
+
+.item-number::before {
+  position: absolut;
+  left: 14px;
+  top: 14px;
+  font-family: "Yeseva One", cursive;
+}
+
+.item-text {
+  display: inline-block;
+  max-width: 70%;
+  vertical-align: middle;
+  margin-left: 17px;
+}
+
+.estimate-submit {
+  background: #131313;
+  color: #fff;
+  flex-basis: 40%;
+  padding: 28px 49px;
+}
+
+.estimate-submit h4 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+#boxed-form:last-child {
+  margin-bottom: 10px;
+}
+
+#boxed-form .form-group {
+  position: relative;
+  margin-top: 48px;
+}
+
+#boxed-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#boxed-form .form-group input {
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+  color: var(--color-secondary);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+#boxed-form .form-group input::placeholder {
+  color: #fff;
+}
+
+#boxed-form .form-checkbox {
+  margin-top: 15px;
+}
+
+#boxed-form .form-checkbox .checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 29px;
+  font-size: 14px;
+}
+
+#boxed-form .form-checkbox .checkbox-label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 1px;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+}
+
+#boxed-form .form-checkbox .checkbox-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#boxed-form .form-checkbox input[type=checkbox] {
+  box-sizing: border-box;
+  display: none;
+}
+
+#boxed-form .form-checkbox input[type=checkbox]:checked {
+  display: none;
+}
+
+#boxed-form .form-checkbox input[type=checkbox]:checked + label:before {
+  content: "";
+  background: var(--color-primary);
+  border-radius: 1px;
+}
+
+#boxed-form .form-checkbox input[type=checkbox]:checked + label:after {
+  display: none;
+}
+
+#boxed-form .btn--submit {
+  max-width: 213px;
+  float: right;
+}
+
+.info {
+  float: right;
+  margin-right: 60px;
+}
+
+.info .savings img {
+  max-width: fit-content;
+  position: relative;
+  left: -12px;
+  top: -11px;
+}
+
+.info p {
+  color: var(--color-primary);
+  display: inline-block;
+  margin-left: 25px;
+  vertical-align: middle;
+  max-width: 50%;
+}
 
 
