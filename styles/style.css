@@ -128,9 +128,37 @@ a {
   margin-left: 2rem;
 }
 
-.btn--submit {
-  
+input {
+  height: 26px;
+  border: 0;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  border-radius: 0;
+  padding: 0 14px 0 0;
+  max-width: 231px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #363636;
+  background: transparent;
 }
+
+input .btn--submit {
+  height: 30px;
+  box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
+  border-bottom: 0;
+  max-width: 100px;
+  font-style: normal;
+  border: none;
+  color: var(--color-secondary);
+  width: 100%;
+  font-size: 13px;
+  line-height: 51px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+
 
 /*NavBar*/
 
@@ -512,22 +540,30 @@ nav__tel {
 
 /*Leave the comment block*/
 
+.estimate-features .estimate-features-list {
+  margin: 0 auto 325px;
+  background-image: url(/assets/images/background.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 800px;
+}
+
 .estimate-form {
-  margin: 230px auto 14px auto;
+  margin: 230px 80px 14px auto;
   display: flex;
   max-height: 539px;
 }
 
-.estimate-features {
+.estimate-form .estimate-features {
   flex-basis: 60%;
 }
 
-.estimate-features-list {
+.estimate-form .estimate-features .estimate-features-list {
   margin-left: 20%;
   max-width: 70%;
 }
 
-.estimate-features-list .item {
+.estimate-form .estimate-features .estimate-features-list .item {
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 39px;
@@ -536,7 +572,7 @@ nav__tel {
   padding: 20px;
 }
 
-.item-number {
+.estimate-form .estimate-features .estimate-features-list .item .item-number {
   content: "";
   background: var(--color-primary);
   width: 42px;
@@ -547,33 +583,39 @@ nav__tel {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  color: #FFFFFF;
-  border: 8px solid #ffffff;
+  color: var(--color-secondary);
+  border: 8px solid var(--color-secondary);
   box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
 }
 
-.item-number::before {
-  position: absolut;
+.estimate-form .estimate-features .estimate-features-list .item .item-number::before {
+  counter-increment: number;
+  content: "0" counter(number) " ";
+  position: absolute;
   left: 14px;
   top: 14px;
   font-family: "Yeseva One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
 }
 
-.item-text {
+.estimate-form .estimate-features .estimate-features-list .item .item-text {
   display: inline-block;
   max-width: 70%;
   vertical-align: middle;
   margin-left: 17px;
 }
 
-.estimate-submit {
-  background: #131313;
-  color: #fff;
+.estimate-form .estimate-submit {
+  background: var(--color-body-dark);
+  color: var(--color-secondary);
   flex-basis: 40%;
   padding: 28px 49px;
 }
 
-.estimate-submit h4 {
+.estimate-form .estimate-submit h4 {
   text-align: center;
   margin-bottom: 40px;
   font-family: "Nunito Sans", sans-serif;
@@ -581,16 +623,16 @@ nav__tel {
   line-height: 26px;
 }
 
-#boxed-form:last-child {
+.estimate-form .estimate-submit #boxed-form:last-child {
   margin-bottom: 10px;
 }
 
-#boxed-form .form-group {
+.estimate-form .estimate-submit #boxed-form .form-group {
   position: relative;
   margin-top: 48px;
 }
 
-#boxed-form .form-group label {
+.estimate-form .estimate-submit #boxed-form .form-group label {
   display: block;
   margin-bottom: 5px;
   font-size: 13px;
@@ -598,7 +640,7 @@ nav__tel {
   color: rgba(255, 255, 255, 0.5);
 }
 
-#boxed-form .form-group input {
+.estimate-form .estimate-submit #boxed-form .form-group input {
   max-width: 100%;
   width: 100%;
   outline: none;
@@ -606,22 +648,22 @@ nav__tel {
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-#boxed-form .form-group input::placeholder {
-  color: #fff;
+.estimate-form .estimate-submit #boxed-form .form-group input::placeholder {
+  color: var(--color-secondary);
 }
 
-#boxed-form .form-checkbox {
+.estimate-form .estimate-submit #boxed-form .form-checkbox {
   margin-top: 15px;
 }
 
-#boxed-form .form-checkbox .checkbox-label {
+.estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label {
   position: relative;
   display: inline-block;
   padding-left: 29px;
   font-size: 14px;
 }
 
-#boxed-form .form-checkbox .checkbox-label:before {
+.estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label:before {
   content: "";
   display: block;
   position: absolute;
@@ -634,7 +676,7 @@ nav__tel {
   background: var(--color-primary);
 }
 
-#boxed-form .form-checkbox .checkbox-label:after {
+.estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label:after {
   content: "";
   display: block;
   position: absolute;
@@ -642,32 +684,33 @@ nav__tel {
   left: 6px;
   width: 5px;
   height: 8px;
-  border: solid white;
+  border: solid var(--color-secondary);
+  border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#boxed-form .form-checkbox input[type=checkbox] {
+.estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox] {
   box-sizing: border-box;
   display: none;
 }
 
-#boxed-form .form-checkbox input[type=checkbox]:checked {
+.estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked {
   display: none;
 }
 
-#boxed-form .form-checkbox input[type=checkbox]:checked + label:before {
+.estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked + label:before {
   content: "";
   background: var(--color-primary);
   border-radius: 1px;
 }
 
-#boxed-form .form-checkbox input[type=checkbox]:checked + label:after {
+.estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked + label:after {
   display: none;
 }
 
-#boxed-form .btn--submit {
+.estimate-form .estimate-submit #boxed-form .btn--submit {
   max-width: 213px;
   float: right;
 }
@@ -677,19 +720,29 @@ nav__tel {
   margin-right: 60px;
 }
 
+.info .savings {
+  padding: 29px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .info .savings img {
   max-width: fit-content;
   position: relative;
   left: -12px;
-  top: -11px;
+  top: 10px;
 }
 
 .info p {
   color: var(--color-primary);
-  display: inline-block;
-  margin-left: 25px;
-  vertical-align: middle;
+  display: relative;
+  margin-left: px;
+  margin-top: 10px;
+  vertical-align: start;
   max-width: 50%;
+  font-size: 18px;
 }
 
 
