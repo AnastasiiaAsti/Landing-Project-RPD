@@ -746,3 +746,71 @@ nav__tel {
 }
 
 
+/*Portfolio*/
+
+.portfolio {
+  background-image: url(/assets/images/background2.svg);
+  background-size: cover;
+  position: relative;
+  color: var(--color-secondary);
+  margin-bottom: 110px;
+  margin-top: 352px;
+  max-height: 864px;
+}
+
+.portfolio .container {
+  display: flex;
+}
+
+.portfolio .container .portfolio-styles {
+  margin: 137px 246px 0 auto;
+  z-index: 1;
+}
+
+.portfolio .container .portfolio-styles h3 {
+  color: var(--color-primary);
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 47px;
+  margin-top: 0;
+}
+
+.portfolio .container .portfolio-styles p {
+  font-size: 20px;
+}
+
+.portfolio.container .list {
+  margin: auto;
+  padding: 0;
+}
+
+.portfolio .container .list li {
+  margin-bottom: 25px;
+}
+
+.portfolio .container .list li a:hover {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.portfolio .container .portfolio-row-1,
+.portfolio .container .portfolio-row-2 {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.portfolio .container .portfolio-row-1 img,
+.portfolio .container .portfolio-row-2 img {
+  max-width: 353px;
+  margin-bottom: 40px;
+}
+
+.portfolio .container .portfolio-row-1 {
+  margin: -40px 45px 0 0;
+}
+
+.portfolio .container .portfolio-row-2 {
+  margin-top: -112px;
+}
+
