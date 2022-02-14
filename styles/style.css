@@ -834,11 +834,17 @@ nav__tel {
   opacity: 0.05;
 }
 
+.testimonials .title-icon {
+  text-align: center;
+  margin: 20px 15px 35px 15px;
+}
+
 .testimonials h3 {
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 0;
   text-align: center;
+  
 }
 
 .testimonials .testimonial-text {
@@ -863,13 +869,19 @@ nav__tel {
   position: relative;
   text-align: left;
   padding: 25px 34px 50px;
-  margin: 0;
+  margin: auto;
+  background: #fffff;
   max-width: 330px;
 }
 
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-header {
   margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Yeseva One", cursive;
 }
+
 
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-header .client-image {
   display: inline-block;
@@ -894,12 +906,22 @@ nav__tel {
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-label {
   position: absolute;
   left: 0;
-  bottom: -25px;
+  margin-bottom: -25px;
   line-height: 25px;
   display: inline-block;
+  align-items: start;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-label img {
   margin-right: 8px;
 }
+
+.testimonials .testimonial-cards .testimonial-card-block .testimonial-label .label-left {
+  border: 1px solid white;
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+  text-align: left;
+}
+
