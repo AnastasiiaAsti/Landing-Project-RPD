@@ -870,7 +870,7 @@ nav__tel {
   text-align: left;
   padding: 25px 34px 50px;
   margin: auto;
-  background: #fffff;
+  background: var(--color-secondary);
   max-width: 330px;
 }
 
@@ -924,4 +924,9 @@ nav__tel {
   position: relative;
   text-align: left;
 }
+
+/*Coontacts*/
+
+
+
 
