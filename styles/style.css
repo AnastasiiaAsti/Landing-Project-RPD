@@ -927,6 +927,239 @@ nav__tel {
 
 /*Coontacts*/
 
+.contact {
+  color: var(--color-secondary);
+  max-width: 100%;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url(/assets/images/Background-end.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.8));
+  opacity: 0.9;
+}
 
+.contact .container {
+  display: flex;
+}
 
+.contact .inner {
+  position: relative;
+  max-width: 843px;
+  margin: auto;
+}
+
+.contact .inner .estimate-submit {
+  background: black;
+  position: relative;
+  height: 445px;
+  width: 883px;
+  padding: 35px 153px;
+  margin: -222px auto 52px;
+}
+
+.contact .inner .estimate-submit h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  color: var(--color-secondary);
+}
+
+.contact .inner .estimate-submit #contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact .inner .estimate-submit #contact-form .form-group {
+  position: relative;
+  margin-top: 48px;
+  padding: 0 28px;
+}
+
+.contact .inner .estimate-submit #contact-form .form-group:last-child {
+  margin: 50px 0 0;
+  text-align: center;
+}
+
+.contact .inner .estimate-submit #contact-form .form-group .form-half {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.contact .inner .estimate-submit #contact-form .form-group .form-full {
+  flex: 1 0 100%;
+  max-width: 100%;
+}
+
+.contact .inner .estimate-submit #contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact .inner .estimate-submit #contact-form .form-group input {
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+  color: #FFFFFF;
+  border-color: rgba(227, 184, 115, 0.15);
+}
+
+.contact .inner .estimate-submit #contact-form .form-group input::placeholder {
+  color: var(--color-secondary);
+}
+
+.contact .inner .estimate-submit #contact-form .form-group .submit-button {
+  max-width: 200px;
+}
+
+.contact .inner .estimate-submit #contact-form .form-checkbox {
+  margin-top: 46px;
+}
+
+.contact .inner .estimate-submit #contact-form .form-checkbox .checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 29px;
+  font-size: 14px;
+}
+
+.contact .inner .estimate-submit #contact-form .form-checkbox .checkbox-label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 1px;
+  border: 1px solid var(--color-primary);
+}
+
+.contact .inner .estimate-submit #contact-form .form-checkbox .checkbox-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 5px;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox] {
+  box-sizing: border-box;
+  display: none;
+}
+
+.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox]:checked {
+  display: none;
+}
+
+.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox]:checked + label:before {
+  content: "";
+  background: var(--color-primary);
+  border-radius: 1px;
+}
+
+.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox]:checked + label:after {
+  display: none;
+}
+
+/*Map*/
+
+.contact .inner .conract-reversed {
+  display: flex;
+  flex-direction: column;
+}
+
+.address h3 {
+  color: var(--color-primary);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+}
+
+.contact .inner .conract-reversed .address .social-icons {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.contact .inner .conract-reversed .address .social-icons .list {
+  padding: 0;
+}
+
+.contact .inner .conract-reversed .address .social-icons .list li {
+ position: relative;
+}
+
+.icon-mail,
+.icon-insta {
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+.contact .inner .conract-reversed .address .social-icons .list li .icon {
+  width: 28px;
+  height: 28px;
+  background-color: var(--color-primary);
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  display: inline-block;
+}*/
+
+/*
+.contact .inner .conract-reversed .address .social-icons .list li .icon .icon-mail {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 13px;
+  vertical-align: middle;
+  margin-top: 3px;
+}
+
+.contact .inner .conract-reversed .address .social-icons .list li .icon .icon-insta {
+  display: inline-block;
+  width: 14px;
+  height: 15px;
+  vertical-align: middle;
+  margin-top: 3px;
+}*/
+
+.contact .inner .conract-reversed .map iframe {
+  height: 465px;
+  width: auto;
+  border: 0;
+}
+
+.contact .inner .contact-reversed .map iframe {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*MEDIA*/
