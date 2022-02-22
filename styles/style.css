@@ -925,13 +925,16 @@ nav__tel {
   text-align: left;
 }
 
+#clients {
+  padding-bottom: 150px;
+}
+
 /*Coontacts*/
 
 .contact {
   color: var(--color-secondary);
   max-width: 100%;
-  height: 100vh;
-  width: 100vw;
+  height: 954px;
   position: relative;
   background-image: url(/assets/images/Background-end.svg);
   background-size: cover;
@@ -963,47 +966,52 @@ nav__tel {
 .contact .inner .estimate-submit {
   background: black;
   position: relative;
-  height: 445px;
-  width: 883px;
   padding: 35px 153px;
-  margin: -222px auto 52px;
+  margin: -200px auto 52px;
 }
 
 .contact .inner .estimate-submit h3 {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  line-height: 25px;
+  margin-bottom: 0;
   color: var(--color-secondary);
 }
 
-.contact .inner .estimate-submit #contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+#contact-form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
-.contact .inner .estimate-submit #contact-form .form-group {
-  position: relative;
-  margin-top: 48px;
-  padding: 0 28px;
+.form-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
-.contact .inner .estimate-submit #contact-form .form-group:last-child {
-  margin: 50px 0 0;
-  text-align: center;
+.form-2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
 }
 
-.contact .inner .estimate-submit #contact-form .form-group .form-half {
-  flex: 0 0 50%;
-  max-width: 50%;
+.form-3 {
+  grid-column-start: 1;
+  grid-column-end: 7;
 }
 
-.contact .inner .estimate-submit #contact-form .form-group .form-full {
-  flex: 1 0 100%;
-  max-width: 100%;
+.form-4 {
+  grid-column-start: 2;
+  grid-column-end: 6;
 }
 
-.contact .inner .estimate-submit #contact-form .form-group label {
+.form-5 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+#contact-form .form-group label {
   display: block;
   margin-bottom: 5px;
   font-size: 13px;
@@ -1011,34 +1019,34 @@ nav__tel {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.contact .inner .estimate-submit #contact-form .form-group input {
+#contact-form .form-group input {
   max-width: 100%;
   width: 100%;
   outline: none;
   color: #FFFFFF;
-  border-color: rgba(227, 184, 115, 0.15);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
-.contact .inner .estimate-submit #contact-form .form-group input::placeholder {
+#contact-form .form-group input::placeholder {
   color: var(--color-secondary);
 }
 
-.contact .inner .estimate-submit #contact-form .form-group .submit-button {
+#contact-form .form-group .submit-button {
   max-width: 200px;
 }
 
-.contact .inner .estimate-submit #contact-form .form-checkbox {
+#contact-form .form-checkbox {
   margin-top: 46px;
 }
 
-.contact .inner .estimate-submit #contact-form .form-checkbox .checkbox-label {
+#contact-form .form-checkbox .checkbox-label {
   position: relative;
   display: inline-block;
   padding-left: 29px;
   font-size: 14px;
 }
 
-.contact .inner .estimate-submit #contact-form .form-checkbox .checkbox-label:before {
+#contact-form .form-checkbox .checkbox-label:before {
   content: "";
   display: block;
   position: absolute;
@@ -1048,38 +1056,46 @@ nav__tel {
   height: 18px;
   border-radius: 1px;
   border: 1px solid var(--color-primary);
+  background: var(--color-primary);
 }
 
-.contact .inner .estimate-submit #contact-form .form-checkbox .checkbox-label:after {
+#contact-form .form-checkbox .checkbox-label:after {
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 6px;
   width: 5px;
+  height: 8px;
+  border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox] {
+#contact-form .form-checkbox input[type=checkbox] {
   box-sizing: border-box;
   display: none;
 }
 
-.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox]:checked {
+#contact-form .form-checkbox input[type=checkbox]:checked {
   display: none;
 }
 
-.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox]:checked + label:before {
+#contact-form .form-checkbox input[type=checkbox]:checked + label:before {
   content: "";
   background: var(--color-primary);
   border-radius: 1px;
 }
 
-.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox]:checked + label:after {
+#contact-form .form-checkbox input[type=checkbox]:checked + label:after {
   display: none;
+}
+
+.btn-form {
+  margin-bottom: 10px;
+  padding-bottom: 23px;
 }
 
 /*Map*/
@@ -1100,57 +1116,49 @@ nav__tel {
   margin: auto;
 }
 
-.contact .inner .conract-reversed .address .social-icons {
+.address .social-icons {
   text-align: center;
   margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.contact .inner .conract-reversed .address .social-icons .list {
+.address .social-icons .list-icon {
   padding: 0;
 }
 
-.contact .inner .conract-reversed .address .social-icons .list li {
- position: relative;
-}
-
-.icon-mail,
-.icon-insta {
-  display: flex;
-  flex-direction: row;
-}
-
-/*
-.contact .inner .conract-reversed .address .social-icons .list li .icon {
-  width: 28px;
-  height: 28px;
-  background-color: var(--color-primary);
-  text-align: center;
-  border-radius: 50%;
-  margin: 0 8px;
-  display: inline-block;
-}*/
-
-/*
-.contact .inner .conract-reversed .address .social-icons .list li .icon .icon-mail {
+.address .social-icons .list-icon li {
   position: relative;
-  display: inline-block;
-  width: 16px;
-  height: 13px;
+}
+
+.address .social-icons .list-icon li .icon .icon-mail {
+  position: relative;
+  background-image: url("/assets/images/icon-envelope.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  width: 35px;
+  height: 35px;
   vertical-align: middle;
   margin-top: 3px;
 }
 
-.contact .inner .conract-reversed .address .social-icons .list li .icon .icon-insta {
-  display: inline-block;
-  width: 14px;
-  height: 15px;
+.address .social-icons .list-icon li .icon .icon-insta {
+  background-image: url("/assets/images/icon\ instagram.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  width: 35px;
+  height: 35px;
   vertical-align: middle;
   margin-top: 3px;
-}*/
+}
 
-.contact .inner .conract-reversed .map iframe {
-  height: 465px;
-  width: auto;
+.map {
+  text-align: center;
+}
+
+.map .map-overlay iframe {
+  margin: 60px auto 10px;
   border: 0;
 }
 
