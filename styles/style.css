@@ -397,7 +397,7 @@ nav__tel {
 .online_control .wrap form .form-group .form-input label input {
   display: flex;
   border: 0;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  border-bottom: 0.5px solid rgba(54, 54, 54, 0.3);
   border-radius: 0;
   padding: 12px 14px 12px 0;
   max-width: 231px;
@@ -627,6 +627,7 @@ nav__tel {
   color: var(--color-secondary);
   flex-basis: 40%;
   padding: 28px 49px;
+  margin-right: 122px;
 }
 
 .estimate-form .estimate-submit h4 {
@@ -725,7 +726,7 @@ nav__tel {
 }
 
 .estimate-form .estimate-submit #boxed-form .btn--submit {
-  max-width: 213px;
+  max-width: 213px !important;
   float: right;
 }
 
@@ -978,7 +979,7 @@ nav__tel {
   background: black;
   position: relative;
   padding: 35px 153px;
-  margin: -200px auto 52px;
+  margin: -200px 0 52px 0;
 }
 
 .contact .inner .estimate-submit h3 {
@@ -1340,6 +1341,7 @@ nav__tel {
 
   .online_control .wrap form .form-group .form-input {
     margin-top: 63px;
+    border-bottom: 1.5px solid white;
   }
 
   .online_control .wrap form .form-group .form-input label {
@@ -1444,12 +1446,16 @@ nav__tel {
     display: none;
   }
 
+  .portfolio .container .portfolio-row-1 {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+
   .portfolio .container .portfolio-row-1 img {
     max-height: 300px;
     max-width: 100%;
     object-fit: cover;
     margin-bottom: 0;
-    text-align: center;
   }
 
 
@@ -1473,6 +1479,7 @@ nav__tel {
   .contact .container .inner .estimate-submit {
     padding: 0;
     margin-top: 0;
+    width: 100vw;
   }
 
   .contact .container .inner .estimate-submit h3 {
@@ -1483,32 +1490,38 @@ nav__tel {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    grid-gap: 40px;
   }
 
   .form-1 {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
+    border-bottom: 1px solid #FFFFFF;
   }
   
   .form-2 {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
+    border-bottom: 1px solid #FFFFFF;
   }
   
   .form-3 {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
+    border-bottom: 1px solid #FFFFFF;
   }
   
   .form-4 {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
   }
   
   .form-5 {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
   }
+
+    
 
   /*Map*/
 
@@ -1527,12 +1540,18 @@ nav__tel {
 
   .contact .inner .contact-reversed .map iframe {
     margin-bottom: 42px;
-    height: 320px;
+    height: 300px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
   .portfolio-styles {
+    display: none;
+  }
+
+  .nav__tel {
     display: none;
   }
 
@@ -1550,10 +1569,6 @@ nav__tel {
     max-width: 100%;
   }
 
-  .nav__tel {
-    display: ;
-  }
-
   .types-repair .grid .service-types .cards {
     justify-content: space-around;
     flex-wrap: wrap;
@@ -1565,6 +1580,11 @@ nav__tel {
 
   .types-repair .estimate-form {
     margin-top: 70px;
+  }
+
+  .estimate-submit {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .portfolio .container .portfolio-styles {
