@@ -1164,6 +1164,8 @@ nav__tel {
   margin-top: 3px;
 }
 
+
+
 .map {
   text-align: center;
 }
@@ -1445,7 +1447,7 @@ nav__tel {
   .portfolio .container .portfolio-row-1 img {
     max-height: 300px;
     max-width: 100%;
-    object-fit: ;
+    object-fit: cover;
     margin-bottom: 0;
     text-align: center;
   }
@@ -1508,6 +1510,64 @@ nav__tel {
     grid-column-end: 2;
   }
 
-  
+  /*Map*/
 
+  #contact-form .form-group .btn-form {
+    max-width: 100%;
+  }
+
+  .contact .container .inner .contact-reversed {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #contact-reversed .address h3 {
+    max-width: 100%;
+  }
+
+  .contact .inner .contact-reversed .map iframe {
+    margin-bottom: 42px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-styles {
+    display: none;
+  }
+
+  .portfolio .container .portfolio-row-1 {
+    margin: -40px auto;
+  }
+
+  .portfolio .container .portfolio-row-2 {
+    margin: -112px auto 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .nav__tel {
+    display: ;
+  }
+
+  .types-repair .grid .service-types .cards {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .types-repair .grid .service-types .cards .card-block {
+    margin-bottom: 100px;
+  }
+
+  .types-repair .estimate-form {
+    margin-top: 70px;
+  }
+
+  .portfolio .container .portfolio-styles {
+    margin: 50px;
+  }
 }
