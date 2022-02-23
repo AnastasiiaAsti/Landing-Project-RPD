@@ -1266,22 +1266,248 @@ nav__tel {
     display: none;
   }
 
-  .projects . .container .content .project-description {
+  .projects .content {
+    display: block;
+    margin: 0;
+  }
+
+  .projects .container .content .project-description {
     padding: 0;
   }
 
   .projects .content .project-description h2 {
     font-size: 22px;
+    line-height: 138.6%;
+  }
+
+  .projects .content .project-description p {
+    padding: 0 17px;
+    font-size: 11px;
+    line-height: 158.48%;
+  }
+
+  .projects .content .project-description .project-details {
+    text-align: center;
+  }
+  
+  .projects .content .project-description .project-details h3 {
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+  
+.projects .container .sider-navigation {
+    display: none;
+  }
+
+  .projects .content .project-image {
+    display: ;
+  }
+
+  /*Online control block*/
+
+  .online_control {
+    background: black;
+    margin-bottom: 88px;
+  }
+
+  .online_control .wrap h3 {
+    font-size: 22px;
+  } 
+
+  .online_control .wrap .break-line {
+    margin-bottom: 72px;
+  }
+
+  .online_control .wrap p {
+    font-size: 11px;
+    line-height: 169.8%;
+    color: var(--color-secondary);
+    margin: auto;
+  }
+
+  .online_control .wrap form {
+    color: var(--color-secondary);
+    padding-bottom: 80px;
+  }
+
+  .online_control .wrap form .form-group {
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .online_control .wrap form .form-group .form-input {
+    margin-top: 63px;
+  }
+
+  .online_control .wrap form .form-group .form-input label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .online_control .wrap form .form-group .form-input label input {
+    max-width: 100%;
+    background: black;
+    border-color: var(--color-secondary);
+  }
+
+  .online_control .wrap form .form-group .form-input label input::placeholder {
+    color: var(--color-secondary);
+  }
+
+  .online_control .wrap form .form-group .btn {
+    position: absolute;
+    bottom: -152px;
+    max-width: 100%;
+  }
+
+  .online_control .wrap form .form-checkbox {
+    margin-top: 26px;
+    text-align: left;
+  }
+
+  .online_control .wrap form .form-checkbox .checkbox-label:before {
+    top: -3px;
+  }
+
+  .online_control .wrap form .form-checkbox .checkbox-label:after {
+    top: 0;
+  }
+
+  /*Block Repair types*/
+
+  .types-repair {
+    margin-bottom: 55px;
+  }
+
+  .types-repair .grid .service-types h3 {
+    font-size: 22px;
+  }
+
+  .types-repair .grid .service-types .cards {
+    flex-direction: column;
+  }
+
+  .types-repair .grid .service-types .cards .card-block {
+    margin-bottom: 80px;
+  }
+  
+  .types-repair .grid .service-types .cards .card-block .card-inner {
+    margin: -133px 70px auto -1px;
+  }
+
+  .types-repair .grid .service-types .cards .card-block .card-label {
+    font-size: 15px;
+    height: 40px;
+    padding: 6px 16px;
+    line-height: 138.6%;
+  }
+
+  /*Leave the comment block-*/
+
+  .types-repair .estimate-form,
+  .types-repair .info {
+    display: none;
+  }
+
+  /*Portfolio*/
+
+  .portfolio {
+    background-image: none;
+    margin-bottom: 0;
+  }
+
+  .portfolio:before {
+    content: none;
+  }
+
+  .portfolio .container {
+    flex-direction: column;
+  }
+
+  .portfolio .container .portfolio-styles {
+    margin: 0;
+  }
+
+  .portfolio .container .portfolio-styles h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .portfolio .container .portfolio-styles .list {
+    display: none;
+  }
+
+  .portfolio .container img.hidden {
+    display: none;
+  }
+
+  .portfolio .container .portfolio-row-1 img {
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: ;
+    margin-bottom: 0;
+    text-align: center;
   }
 
 
+  /*Testimonials*/
 
+  .testimonials {
+    display: none;
+  }
 
+  /*Contacts*/
 
+  .contact .container{
+    background-image: none;
+    background-color: black;
+  }
 
+  .contact .container .inner {
+    padding-top: 130px;
+  }
 
+  .contact .container .inner .estimate-submit {
+    padding: 0;
+    margin-top: 0;
+  }
 
+  .contact .container .inner .estimate-submit h3 {
+    text-align: center;
+  }
 
+  #contact-form  {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
 
+  .form-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .form-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .form-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .form-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .form-5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  
 
 }
