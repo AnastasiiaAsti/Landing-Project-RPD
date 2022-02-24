@@ -751,7 +751,7 @@ nav__tel {
 
 .info p {
   color: var(--color-primary);
-  display: relative;
+  position: relative;
   margin-left: px;
   margin-top: 10px;
   vertical-align: start;
@@ -839,7 +839,6 @@ nav__tel {
   content: "";
   background-image: url(/assets/images/building-2.svg);
   background-repeat: repeat-x;
-  background-position: left-bottom;
   background-size: 628px;
   display: block;
   position: absolute;
