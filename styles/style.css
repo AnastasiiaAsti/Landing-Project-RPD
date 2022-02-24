@@ -554,30 +554,30 @@ nav__tel {
 
 /*Leave the comment block*/
 
-.estimate-features .estimate-features-list {
-  margin: 0 auto 325px;
+.estimate-form {
+  margin: 75px auto 325px;
   background-image: url(/assets/images/background.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 800px;
 }
 
-.estimate-form {
+.types-repair .estimate-form {
   margin: 230px auto 14px auto;
   display: flex;
   max-height: 539px;
 }
 
-.estimate-form .estimate-features {
+.types-repair .estimate-form .estimate-features {
   flex-basis: 60%;
 }
 
-.estimate-form .estimate-features .estimate-features-list {
+.types-repair .estimate-form .estimate-features .estimate-features-list {
   margin-left: 20%;
   max-width: 70%;
 }
 
-.estimate-form .estimate-features .estimate-features-list .item {
+.types-repair .estimate-form .estimate-features .estimate-features-list .item {
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 39px;
@@ -627,7 +627,6 @@ nav__tel {
   color: var(--color-secondary);
   flex-basis: 40%;
   padding: 28px 49px;
-  margin-right: 122px;
 }
 
 .estimate-form .estimate-submit h4 {
@@ -1351,6 +1350,7 @@ nav__tel {
     position: absolute;
     bottom: -152px;
     max-width: 100%;
+    
   }
 
   .online_control .wrap form .form-checkbox {
@@ -1502,7 +1502,13 @@ nav__tel {
   }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  body {
+    width: 100%;
+  }
+
+ 
 
   .portfolio-styles {
     display: none;
@@ -1522,6 +1528,7 @@ nav__tel {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
+
   .container {
     max-width: 100%;
   }
