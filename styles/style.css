@@ -1038,10 +1038,6 @@ nav__tel {
   color: var(--color-secondary);
 }
 
-.contact .inner .estimate-submit #contact-form .form-group button {
-  max-width: 200px;
-}
-
 .contact .inner .estimate-submit #contact-form .form-checkbox {
   margin-top: 46px;
 }
@@ -1096,7 +1092,7 @@ nav__tel {
   border-radius: 1px;
 }
 
-#contact-form .form-checkbox input[type=checkbox]:checked + label:after {
+.contact .inner .estimate-submit #contact-form .form-checkbox input[type=checkbox]:checked + label:after {
   display: none;
 }
 
