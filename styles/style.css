@@ -43,18 +43,22 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 20px;
   transform: uppercase;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 18px;
   transform: uppercase;
   margin: 0;
   font-size: normal;
   font-weight: normal;
   line-height: 25px;
   margin-bottom: 10px;
+}
+
+sup {
+  vertical-align: text-bottom;
 }
 
 .container {
@@ -89,45 +93,55 @@ label {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: inherit;
+  color: var(--color-primary);
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a:hover {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
 }
 
 /*Buttons*/
 
-.btn {
-  font-size: 1rem;
+button,
+.button {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  padding: 22px 4px;
   border-radius: 2px;
   outline: none;
   border: none;
+  color: var(--color-secondary);
   text-transform: uppercase;
-  font-style: normal;
+  font-style: italic;
   cursor: pointer;
+  margin-right: 20px;
 }
 
-.btn--primary {
-  color: var(--color-secondary);
-  background: var(--color-primary);
-  padding: 1.3rem 3.3rem;
+button.btn-default,
+.button.btn-default {
+  padding: 13px 33px;
+  box-shadow: 0 5px 20px rgba(227, 184, 115, 0.1);
   white-space: nowrap;
-  border: 1px solid var(--color-primary);
 }
 
-.btn--secondary {
-  color: var(--color-secondary);
-  background-repeat: no-repeat;
+button.btn,
+.button.btn {
+  padding: 20px 40px;
+  margin-right: 20px;
+  font-size: 11px;
   background: transparent;
-  padding: 1.3rem 3.3rem;
+  color: var(--color-secondary);
   border: 1px solid var(--color-secondary);
-  overflow: hidden;
-  outline: none;
 }
 
-.btn__nav {
-  margin-right: 5rem;
-}
-
-.btn--intro {
-  margin-left: 2rem;
+button.btn:hover,
+.button.btn:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 input {
@@ -143,7 +157,7 @@ input {
   background: transparent;
 }
 
-input .btn--submit {
+input.btn--submit {
   height: 30px;
   box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
   border-bottom: 0;
@@ -154,8 +168,24 @@ input .btn--submit {
   width: 100%;
   font-size: 13px;
   line-height: 51px;
-  padding-left: 0;
-  padding-right: 0;
+}
+
+.card-label {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  margin-left: 25px;
+  color: var(--color-secondary);
+  background: var(--color-primary);
+  padding: 10px 21px;
+  max-width: 100%;
+  height: 54px;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-family: 'Yeseva One', cursive;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
 
@@ -201,6 +231,11 @@ input .btn--submit {
   line-height: 1.5rem;
 }
 
+.header .header__content .nav__list ul li a:hover {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+}
+
 .heading__accent {
   color: var(--color-primary);
 }
@@ -215,8 +250,7 @@ nav__tel {
 .hero {
   background-image: url(/assets/images/hero\ image.png);
   background-size: cover;
-  height: 80rem;
-  width: 100vw;
+  height: 707px;
   position: relative;
   color: var(--color-secondary);
   margin: -1px auto;
@@ -264,35 +298,35 @@ nav__tel {
   color: var(--color-secondary);
 }
 
-.projects .locations {
+.projects .project-locations {
   display: flex;
   margin-left: 50%;
   margin-bottom: 45px;
 }
 
-.projects .locations ul {
+.projects .project-locations ul {
   padding: 0;
 }
 
-.one,
-.two {
+.projects .project-locations ul li {
   list-style: none;
   margin-right: 30px;
-  font-family: "Yeseva One", cursive;
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  text-transform: uppercase;
-  color: var(--color-secondary);
 }
 
-.one:hover,
-.two:hover,
-.one.active,
-.two.active {
+.projects .project-locations ul li a {
+  font-family: "Yeseva One", cursive;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.projects .project-locations ul li a:hover,
+.projects .project-locations ul li a.active {
   color: var(--color-primary);
-  padding-bottom: 7px;
-  border-bottom: 1px solid var(--color-primary);
-  transition: 0.5s ease-in-out;
+  padding-bottom: 1px solid var(--color-primary);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects .content {
@@ -303,24 +337,60 @@ nav__tel {
 .projects .content .project-description {
   flex-basis: 50%;
   padding-right: 50px;
-  display: grid;
-
 }
 
-.heading_three {
+.projects .content .project-description h2 {
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
   color: var(--color-primary);
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
-.projects-p {
+.projects .content .project-description p span {
   display: block;
   font-size: 14px;
   line-height: 27px;
 }
 
-.project-image {
+.projects .content .project-description .hidden-slider {
+  display: none;
+  position: relative;
+  margin-top: 70px;
+}
+
+.projects .content .project-description .hidden-slider a {
+  padding: 12px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.projects .content .project-description .hidden-slider a.slider-prev  {
+  top: 40%;
+  left: 0;
+  margin-left: 14px;
+  margin-left: 9px;
+}
+
+.projects .content .project-description .hidden-slider a.slider-next  {
+  top: 40%;
+  left: 0;
+  margin-right: 14px;
+  margin-right: 9px;
+}
+
+.projects .content .project-description .hidden-slider a img {
   display: block;
   margin: auto;
-  flex-basis: 50%;
+} 
+
+.projects .content .project-description .hidden-slider .hidden-img {
+  background-image: url(/assets/images/slider-image.png);
+  background-size: cover;
+  width: 340px;
+  height: 200px;
+  display: inline-block;
 }
 
 .projects .content .project-description .project-details {
@@ -332,6 +402,17 @@ nav__tel {
 .projects .content .project-description .project-details .project-features {
   flex-basis: 50%;
   flex-direction: column;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.projects .content .project-description .project-details .project-features h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: var(--color-primary);
+  margin: 34px auto 9px;
 }
 
 .projects .content .project-description .project-details .project-features span {
@@ -346,24 +427,101 @@ nav__tel {
   max-width: 50px;
 }
 
-.dot,
-.right {
-  padding-left: 20px;
+.projects .content .project-description .slider-navigation {
+  display: inline-block;
+}
+
+.projects .content .project-description .slider-navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
+.projects .content .project-description .slider-navigation ul li {
+  display: inline-block;
+}
+
+.projects .content .project-description .slider-navigation ul li .arrow.left {
+  border: none;
+  margin-right: 12px;
+}
+
+.projects .content .project-description .slider-navigation ul li .arrow.right {
+  border: none;
+  margin-left: 12px;
+}
+
+.projects .content .project-description .slider-navigation ul li .arrow img {
+  width: 42px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.projects .content .project-description .slider-navigation ul li .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 9px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.projects .content .project-description .slider-navigation ul li .dot:hover,
+.projects .content .project-description .slider-navigation ul li .dot:focus {
+  background-color: var(--color-secondary);
+}
+
+.projects .content .project-description .slider-navigation ul li .dot.active {
+  background-color: var(--color-secondary);
+}
+
+.projects .content .project-image {
+  flex-basis: 50%;
+  background-image: url(/assets/images/slider-image.png);
+  background-size: cover;
+}
+
+.projects .content .project-image.showing {
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  transition: all 3s ease;
 }
 
 /*Online control block*/
 
 .online_control {
-  margin-top: -327px;
+  margin-top: -350px;
 }
 
-.wrap {
+.online_control .wrap {
   text-align: center;
   margin: auto;
   max-width: 817px;
 }
 
-.break-line {
+.online_control .wrap h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 0;
+  line-height: 28px;
+  color: var(--color-secondary);
+}
+
+.online-video {
+  position: relative;
+}
+
+.online-video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -30px;
+}
+
+.online_control .wrap .break-line {
   width: 55px;
   border-top: 1px solid var(--color-primary);
   border-radius: 30px;
@@ -377,18 +535,18 @@ nav__tel {
   margin: 25px 84px 91px 84px;
 }
 
-.form-group {
+.online_control .wrap form .form-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.form-input {
+.online_control .wrap form .form-group .form-input {
   text-align: left;
 }
 
-.form-input label {
+.online_control .wrap form .form-group .form-input label {
   font-size: 13px;
   line-height: 21px;
   color: rgba(54, 54, 54, 0.5);
@@ -397,9 +555,9 @@ nav__tel {
 .online_control .wrap form .form-group .form-input label input {
   display: flex;
   border: 0;
-  border-bottom: 0.5px solid rgba(54, 54, 54, 0.3);
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   border-radius: 0;
-  padding: 12px 14px 12px 0;
+  padding: 0 14px 0 0;
   max-width: 231px;
   color: var(--color-body-light);
 }
@@ -432,15 +590,14 @@ nav__tel {
   width: 18px;
   border-radius: 1px;
   border: 1px solid var(--color-primary);
-  background: var(--color-primary);
 }
 
 .online_control .wrap form .form-checkbox .checkbox-label:after {
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
-  left: 5px;
+  top: 2px;
+  left: 6px;
   height: 5px;
   width: 8px;
   border: solid white;
@@ -451,25 +608,15 @@ nav__tel {
 }
 
 .online_control .wrap form .form-checkbox input[type=checkbox] {
-  box-sizing: border-box;
-  display: none;
-}
-
-.online_control .wrap form .form-checkbox input[type=checkbox]:checked {
   display: none;
 }
 
 .online_control .wrap form .form-checkbox input[type=checkbox]:checked + label:before {
-  content: "";
   background: var(--color-primary);
   border-radius: 1px;
 }
 
-.online_control .wrap form .form-checkbox input[type=checkbox]:checked + label:after {
-  display: none;
-}
-
-.online-control .wrap input {
+.online_control .wrap input {
   width: 100%;
   font-size: 13px;
   height: 50px;
@@ -481,8 +628,18 @@ nav__tel {
   transition: all 0.2s;
   box-shadow: none;
   border: 1px solid var(--color-secondary);
+  background: #FFFFFF;
 }
 
+.btn--submit{
+  box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
+  border-bottom: 0;
+  max-width: 200px;
+  font-size: normal;
+  border: none;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
 
 /*Block repair types*/
 
@@ -529,11 +686,12 @@ nav__tel {
 }
 
 .card-inner-list {
+  font-size: 13px;
+  color: #959595;
   display: inline-block;
   margin: 0;
   padding-left: 15px;
   line-height: 2.5rem;
-  color: var(--color-body-light);
 }
 
 .card-label {
@@ -774,6 +932,16 @@ nav__tel {
   max-height: 864px;
 }
 
+.portfolio:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
 .portfolio .container {
   display: flex;
 }
@@ -791,8 +959,10 @@ nav__tel {
   margin-top: 0;
 }
 
-.portfolio .container .portfolio-styles p {
+.portfolio .container .portfolio-styles a {
   font-size: 20px;
+  font-size: 400;
+  color: var(--color-secondary);
 }
 
 .portfolio.container .list {
@@ -826,15 +996,18 @@ nav__tel {
   margin: -40px 45px 0 0;
 }
 
+.portfolio .container .portfolio-row-1 .responsive-nav {
+  display: none;
+}
+
 .portfolio .container .portfolio-row-2 {
   margin-top: -112px;
-  margin-right: 20px;
 }
 
 /*Testimonials*/
 
 .testimonials {
-  padding-bottom: 400px;
+  padding-bottom: 354px;
   position: relative;
 }
 
@@ -842,6 +1015,7 @@ nav__tel {
   content: "";
   background-image: url(/assets/images/building-2.svg);
   background-repeat: repeat-x;
+  background-position: left bottom;
   background-size: 628px;
   display: block;
   position: absolute;
@@ -850,17 +1024,16 @@ nav__tel {
   opacity: 0.05;
 }
 
-.testimonials .title-icon {
-  text-align: center;
-  margin: 20px 15px 35px 15px;
-}
-
 .testimonials h3 {
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 0;
   text-align: center;
-  
+}
+
+.testimonials .title-icon {
+  text-align: center;
+  margin: 20px 15px 35px 15px;
 }
 
 .testimonials .testimonial-text {
@@ -892,14 +1065,12 @@ nav__tel {
 
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-header {
   margin-bottom: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Yeseva One", cursive;
 }
 
 
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-header .client-image {
+  width: 76px;
+  height: 76px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 23px;
@@ -924,23 +1095,37 @@ nav__tel {
   left: 0;
   margin-bottom: -25px;
   line-height: 25px;
+  background-color: var(--color-primary);
+  font-family: 'Yeseva One', cursive;
+  color: var(--color-secondary);
+  font-size: 17px;
   display: inline-block;
-  align-items: start;
+  text-transform: uppercase;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+.testimonials .testimonial-cards .testimonial-card-block .testimonial-label .label-left,
+.testimonials .testimonial-cards .testimonial-card-block .testimonial-label .label-right {
+  display: inline-block;
+  padding: 10px 12px;
+}
+
+.testimonials .testimonial-cards .testimonial-card-block .testimonial-label .label-left {
+  border-right: 1px soild white;
+}
+
+.testimonials .testimonial-cards .testimonial-card-block .testimonial-label img,
+.testimonials .testimonial-cards .testimonial-card-block .testimonial-label span {
+  vertical-align: middle;
 }
 
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-label img {
   margin-right: 8px;
 }
 
-.testimonials .testimonial-cards .testimonial-card-block .testimonial-label .label-left {
-  border: 1px solid white;
-  padding: 10px;
-  margin-top: 10px;
-  position: relative;
-  text-align: left;
+.testimonials .testimonial-cards .testimonial-card-block .testimonial-label .label-right span {
+  vertical-align: sub;
 }
-
 
 /*Coontacts*/
 
@@ -1224,7 +1409,7 @@ nav__tel {
 
   .hero__heading {
     font-size: 22px;
-    line-height: 3rem;
+    line-height: 1.35em;
   }
 
   .hero__intro {
@@ -1246,12 +1431,12 @@ nav__tel {
   /* Completed Projects*/
 
 
-  .projects .container .content {
+  .projects {
     padding: 36px 0 282px;
     text-align: center;
   }
 
-  .projects .locations {
+  .projects .project-locations {
     display: none;
   }
 
@@ -1260,11 +1445,7 @@ nav__tel {
     margin: 0;
   }
 
-  .projects .container .content {
-    padding-bottom: 0;
-  }
-
-  .projects .container .content .project-description {
+  .projects .content .project-description {
     padding: 0;
   }
 
@@ -1279,6 +1460,15 @@ nav__tel {
     line-height: 158.48%;
   }
 
+  .projects .content .project-description p span {
+    display: inline;
+  }
+
+  .projects .content .project-description .hidden-slider {
+    display: inline-block;
+    margin-top: 60px;
+  }
+
   .projects .content .project-description .project-details {
     text-align: center;
   }
@@ -1288,15 +1478,36 @@ nav__tel {
     line-height: 138.6%;
   }
   
-.projects .container .sider-navigation {
+.projects .content .project-description .slider-navigation {
     display: none;
   }
+
+  .projects .content .project-description .hidden-slider a.slider-prev  {
+    top: 50%;
+    left: 0;
+  }
+  
+  .projects .content .project-description .hidden-slider a.slider-next  {
+    top: 50%;
+    right: 0;
+    margin-right: 0;
+    padding-right: 0;
+
+  }
+
+/*.projects .content .project-image {
+    display: none;
+  }*/
 
   /*Online control block*/
 
   .online_control {
     background: black;
     margin-bottom: 88px;
+  }
+
+  .online-control {
+    margin-top: 30px;
   }
 
   .online_control .wrap h3 {
@@ -1327,7 +1538,6 @@ nav__tel {
 
   .online_control .wrap form .form-group .form-input {
     margin-top: 63px;
-    border-bottom: 1px solid white;
   }
 
   .online_control .wrap form .form-group .form-input label {
@@ -1363,6 +1573,7 @@ nav__tel {
   .online_control .wrap form .form-checkbox .checkbox-label:after {
     top: 0;
   }
+
 
   /*Block Repair types*/
 
@@ -1405,7 +1616,6 @@ nav__tel {
   .portfolio {
     background-image: none;
     margin-bottom: 0;
-    margin-top: 0;
   }
 
   .portfolio:before {
@@ -1443,7 +1653,38 @@ nav__tel {
     max-width: 100%;
     object-fit: cover;
     margin-bottom: 0;
-    overflow: hidden;
+  }
+
+  .portfolio .container .portfolio-row-1 .responsive-nav {
+    display: inline-block;
+    position: relative;
+  }
+
+  .portfolio .container .portfolio-row-1 .responsive-nav a {
+    padding: 12px;
+    color: var(--color-secondary);
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .portfolio .container .portfolio-row-1 .responsive-nav a.slider-prev {
+    top: 70px;
+    margin-left: 14px;
+    padding-left: 9px;
+    border: none;
+  }
+
+  .portfolio .container .portfolio-row-1 .responsive-nav a.slider-next {
+    top: 70px;
+    right: 0;
+    margin-right: 14px;
+    padding-right: 9px;
+    border: none;
+  }
+
+  .portfolio .container .portfolio-row-1 .responsive-nav a img {
+    display: block;
+    margin: auto;
   }
 
 
@@ -1485,7 +1726,7 @@ nav__tel {
   }
 
   .contact .container .inner .conract-reversed {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
 /*Map*/
@@ -1511,23 +1752,28 @@ nav__tel {
     display: none;
   }
 
-  .nav__tel {
-    display: none;
-  }
-
   .portfolio .container .portfolio-row-1 {
     margin: -40px auto;
   }
 
   .portfolio .container .portfolio-row-2 {
-    margin: -112px auto 0;
+    display: none;
   }
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1440px) {
 
+  body {
+    width: 100%;
+  }
+
   .container {
-    max-width: 100%;
+    width: 100%;
+  }
+
+  .nav__tel {
+    display: none;
   }
 
   .types-repair .grid .service-types .cards {
@@ -1541,11 +1787,6 @@ nav__tel {
 
   .types-repair .estimate-form {
     margin-top: 70px;
-  }
-
-  .estimate-submit {
-    margin-right: 0;
-    margin-left: 0;
   }
 
   .portfolio .container .portfolio-styles {
