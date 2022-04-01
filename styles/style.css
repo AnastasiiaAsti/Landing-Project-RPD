@@ -107,8 +107,6 @@ a:hover {
 button,
 .button {
   background: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  padding: 22px 4px;
   border-radius: 2px;
   outline: none;
   border: none;
@@ -116,14 +114,13 @@ button,
   text-transform: uppercase;
   font-style: italic;
   cursor: pointer;
-  margin-right: 20px;
 }
 
 button.btn-default,
 .button.btn-default {
   padding: 13px 33px;
   box-shadow: 0 5px 20px rgba(227, 184, 115, 0.1);
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
 
 button.btn,
@@ -157,11 +154,11 @@ input {
   background: transparent;
 }
 
-input.btn--submit {
-  height: 30px;
+input.submit-button {
+  height: 50px;
   box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
   border-bottom: 0;
-  max-width: 100px;
+  max-width: 200px;
   font-style: normal;
   border: none;
   color: var(--color-secondary);
@@ -202,7 +199,7 @@ input.btn--submit {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8rem;
+  height: 83px;
 }
 
 .header .header__content {
@@ -212,9 +209,9 @@ input.btn--submit {
   color: var(--color-secondary);
 }
 
-.nav__logo {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+.header .header__content .nav__logo {
+  font-size: 11px;
+  line-height: 15px;
   text-transform: uppercase;
   color: var(--color-primary);
   margin-left: 3rem;
@@ -222,18 +219,20 @@ input.btn--submit {
 
 .header .header__content .nav__list ul li {
   list-style: none;
-  margin-right: 4rem;
+  margin-right: 47px;
 }
 
 .header .header__content .nav__list ul li a {
   color: var(--color-secondary);
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
 }
 
 .header .header__content .nav__list ul li a:hover {
   color: var(--color-primary);
   border-bottom: 1px solid var(--color-primary);
+  transition: all 0.3s ease-in-out;
 }
 
 .heading__accent {
@@ -369,15 +368,15 @@ nav__tel {
 .projects .content .project-description .hidden-slider a.slider-prev  {
   top: 40%;
   left: 0;
-  margin-left: 14px;
-  margin-left: 9px;
+  margin-right: 14px;
+  margin-right: 9px;
 }
 
 .projects .content .project-description .hidden-slider a.slider-next  {
   top: 40%;
-  left: 0;
-  margin-right: 14px;
-  margin-right: 9px;
+  right: 0;
+  margin-left: 14px;
+  margin-left: 9px;
 }
 
 .projects .content .project-description .hidden-slider a img {
@@ -492,7 +491,7 @@ nav__tel {
 /*Online control block*/
 
 .online_control {
-  margin-top: -350px;
+  margin-top: -327px;
 }
 
 .online_control .wrap {
@@ -529,7 +528,7 @@ nav__tel {
 }
 
 .online_control .wrap p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 37px;
   color: var(--color-body-light);
   margin: 25px 84px 91px 84px;
@@ -585,7 +584,7 @@ nav__tel {
   display: block;
   position: absolute;
   top: -2px;
-  left: 0px;
+  left: 0;
   height: 18px;
   width: 18px;
   border-radius: 1px;
@@ -616,7 +615,7 @@ nav__tel {
   border-radius: 1px;
 }
 
-.online_control .wrap input {
+.online_control .wrap .form-group .form-input input {
   width: 100%;
   font-size: 13px;
   height: 50px;
@@ -631,7 +630,7 @@ nav__tel {
   background: #FFFFFF;
 }
 
-.btn--submit{
+online_control .wrap .first-form .submit-button {
   box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
   border-bottom: 0;
   max-width: 200px;
@@ -647,35 +646,37 @@ nav__tel {
   margin: 75px auto 325px;
 }
 
-.service-types {
+.services .service-types {
   margin-top: 130px;
 }
 
-.services_heading {
-  line-height: 2.5rem;
+.services .service-types .services_heading {
+  line-height: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 0;
   text-align: center;
 }
 
 .icon {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
-.types-repair .service-types .cards {
+.services .service-types .cards {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
-.types-repair .service-types .cards .card-block {
-  max-width: 380px;
+.services .service-types .cards .card-block {
+  max-width: 392px;
   position: relative;
-  width: 100%;
-  height: auto;
 }
 
-.card-inner {
+.services .service-types .cards .card-block .card-inner {
   position: relative;
   text-align: left;
   padding: 25px 34px 50px;
@@ -685,36 +686,33 @@ nav__tel {
   max-width: 330px;
 }
 
-.card-inner-list {
-  font-size: 13px;
-  color: #959595;
+.services .service-types .cards .card-block .card-inner h4 {
+  color: #363636;
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.services .service-types .cards .card-block .card-inner .card-inner-list {
   display: inline-block;
   margin: 0;
   padding-left: 15px;
-  line-height: 2.5rem;
 }
 
-.card-label {
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-  margin-left: 25px;
-  color: var(--color-secondary);
-  background: var(--color-primary);
-  padding: 1rem 2.1rem;
-  max-width: 100%;
-  height: 4rem;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  font-family: "Yeseva One", cursive;
-  display: inline-block;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  text-transform: uppercase;
+.services .service-types .cards .card-block .card-inner .card-inner-list li {
+  list-style-type: disc;
+  font-size: 13px;
+  line-height: 27px;
+  color: #959595;
 }
 
 /*Leave the comment block*/
 
-.estimate-form {
+.services .estimate-form {
   margin: 75px auto 325px;
   background-image: url(/assets/images/background.svg);
   background-repeat: no-repeat;
@@ -722,22 +720,23 @@ nav__tel {
   background-size: 800px;
 }
 
-.types-repair .estimate-form {
+.services .estimate-form {
   margin: 230px auto 14px auto;
   display: flex;
   max-height: 539px;
 }
 
-.types-repair .estimate-form .estimate-features {
+
+.services .estimate-form .estimate-features {
   flex-basis: 60%;
 }
 
-.types-repair .estimate-form .estimate-features .estimate-features-list {
+.services .estimate-form .estimate-features .estimate-features-list {
   margin-left: 20%;
   max-width: 70%;
 }
 
-.types-repair .estimate-form .estimate-features .estimate-features-list .item {
+.services .estimate-form .estimate-features .estimate-features-list .item {
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 39px;
@@ -746,7 +745,7 @@ nav__tel {
   padding: 20px;
 }
 
-.estimate-form .estimate-features .estimate-features-list .item .item-number {
+.services .estimate-form .estimate-features .estimate-features-list .item .item-number {
   content: "";
   background: var(--color-primary);
   width: 42px;
@@ -762,7 +761,7 @@ nav__tel {
   box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
 }
 
-.estimate-form .estimate-features .estimate-features-list .item .item-number::before {
+.services .estimate-form .estimate-features .estimate-features-list .item .item-number::before {
   counter-increment: number;
   content: "0" counter(number) " ";
   position: absolute;
@@ -775,21 +774,21 @@ nav__tel {
   line-height: 25px;
 }
 
-.estimate-form .estimate-features .estimate-features-list .item .item-text {
+.services .estimate-form .estimate-features .estimate-features-list .item .item-text {
   display: inline-block;
   max-width: 70%;
   vertical-align: middle;
   margin-left: 17px;
 }
 
-.estimate-form .estimate-submit {
+.services .estimate-form .estimate-submit {
   background: var(--color-body-dark);
   color: var(--color-secondary);
   flex-basis: 40%;
   padding: 28px 49px;
 }
 
-.estimate-form .estimate-submit h4 {
+.services .estimate-form .estimate-submit h4 {
   text-align: center;
   margin-bottom: 40px;
   font-family: "Nunito Sans", sans-serif;
@@ -797,16 +796,16 @@ nav__tel {
   line-height: 26px;
 }
 
-.estimate-form .estimate-submit #boxed-form:last-child {
+.services .estimate-form .estimate-submit #boxed-form:last-child {
   margin-bottom: 10px;
 }
 
-.estimate-form .estimate-submit #boxed-form .form-group {
+.services .estimate-form .estimate-submit #boxed-form .form-group {
   position: relative;
   margin-top: 48px;
 }
 
-.estimate-form .estimate-submit #boxed-form .form-group label {
+.services .estimate-form .estimate-submit #boxed-form .form-group label {
   display: block;
   margin-bottom: 5px;
   font-size: 13px;
@@ -814,7 +813,7 @@ nav__tel {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.estimate-form .estimate-submit #boxed-form .form-group input {
+.services .estimate-form .estimate-submit #boxed-form .form-group input {
   max-width: 100%;
   width: 100%;
   outline: none;
@@ -822,22 +821,22 @@ nav__tel {
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-.estimate-form .estimate-submit #boxed-form .form-group input::placeholder {
+.services .estimate-form .estimate-submit #boxed-form .form-group input::placeholder {
   color: var(--color-secondary);
 }
 
-.estimate-form .estimate-submit #boxed-form .form-checkbox {
+.services .estimate-form .estimate-submit #boxed-form .form-checkbox {
   margin-top: 15px;
 }
 
-.estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label {
+.services .estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label {
   position: relative;
   display: inline-block;
   padding-left: 29px;
   font-size: 14px;
 }
 
-.estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label:before {
+.services .estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label:before {
   content: "";
   display: block;
   position: absolute;
@@ -850,7 +849,7 @@ nav__tel {
   background: var(--color-primary);
 }
 
-.estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label:after {
+.services .estimate-form .estimate-submit #boxed-form .form-checkbox .checkbox-label:after {
   content: "";
   display: block;
   position: absolute;
@@ -865,56 +864,54 @@ nav__tel {
   transform: rotate(45deg);
 }
 
-.estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox] {
+.services .estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox] {
   box-sizing: border-box;
   display: none;
 }
 
-.estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked {
+.services .estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked {
   display: none;
 }
 
-.estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked + label:before {
+.services .estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked + label:before {
   content: "";
   background: var(--color-primary);
   border-radius: 1px;
 }
 
-.estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked + label:after {
+.services .estimate-form .estimate-submit #boxed-form .form-checkbox input[type=checkbox]:checked + label:after {
   display: none;
 }
 
-.estimate-form .estimate-submit #boxed-form .btn--submit {
+.services .estimate-form .estimate-submit #boxed-form .btn--submit {
   max-width: 213px !important;
   float: right;
 }
 
-.info {
+.services .info {
   float: right;
   margin-right: 60px;
 }
 
-.info .savings {
+.services .info .savings-badge {
   padding: 29px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.info .savings img {
+.services .info .savings-badge img {
   max-width: fit-content;
   position: relative;
   left: -12px;
-  top: 10px;
+  top: 11px;
 }
 
-.info p {
+.services .info p {
   color: var(--color-primary);
-  position: relative;
-  margin-left: px;
-  margin-top: 10px;
-  vertical-align: start;
+  display: inline-block;
+  margin-left: 25px;
+  vertical-align: middle;
   max-width: 50%;
   font-size: 18px;
 }
@@ -928,7 +925,6 @@ nav__tel {
   position: relative;
   color: var(--color-secondary);
   margin-bottom: 110px;
-  margin-top: 352px;
   max-height: 864px;
 }
 
@@ -988,7 +984,6 @@ nav__tel {
 
 .portfolio .container .portfolio-row-1 img,
 .portfolio .container .portfolio-row-2 img {
-  max-width: 353px;
   margin-bottom: 40px;
 }
 
@@ -1384,6 +1379,10 @@ nav__tel {
     margin-right: 30px;
   }
 
+  .header .header__content button.btn-default {
+    display: none;
+  }
+
   .hero {
     height: 476px;
     background-position: 75%;
@@ -1398,9 +1397,6 @@ nav__tel {
     padding-top: 85px;
   }
 
-  .hero .hero-overlay .hero__container .container {
-    margin-top: 0;
-  }
 
   .hero .hero-overlay .hero__container .container .caption {
     text-align: center;
@@ -1423,9 +1419,13 @@ nav__tel {
     text-align: center;
   }
 
-  .hero .hero-overlay .hero__container .container .caption .call-to-action .btn {
+  .hero .hero-overlay .hero__container .container .caption .call-to-action button.btn {
     margin: 26px auto 0;
     width: 100%;
+  }
+
+  .hero .hero-overlay .hero__container .container .caption .call-to-action button.btn .hidden {
+    display: none;
   }
 
   /* Completed Projects*/
@@ -1483,16 +1483,19 @@ nav__tel {
   }
 
   .projects .content .project-description .hidden-slider a.slider-prev  {
-    top: 50%;
+    top: 30%;
     left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    border: none;
   }
   
   .projects .content .project-description .hidden-slider a.slider-next  {
-    top: 50%;
+    top: 30%;
     right: 0;
-    margin-right: 0;
-    padding-right: 0;
-
+    margin-left: 0;
+    padding-left: 0;
+    border: none;
   }
 
 /*.projects .content .project-image {
@@ -1504,10 +1507,6 @@ nav__tel {
   .online_control {
     background: black;
     margin-bottom: 88px;
-  }
-
-  .online-control {
-    margin-top: 30px;
   }
 
   .online_control .wrap h3 {
@@ -1554,7 +1553,7 @@ nav__tel {
     color: var(--color-secondary);
   }
 
-  .online_control .wrap form .form-group .btn.btn--submit {
+  .online_control .wrap .submit-button {
     position: absolute;
     bottom: -152px;
     max-width: 100%;
@@ -1577,27 +1576,27 @@ nav__tel {
 
   /*Block Repair types*/
 
-  .types-repair {
+  .services {
     margin-bottom: 55px;
   }
 
-  .types-repair .grid .service-types h3 {
+  .services .grid .service-types h3 {
     font-size: 22px;
   }
 
-  .types-repair .grid .service-types .cards {
+  .services .grid .service-types .cards {
     flex-direction: column;
   }
 
-  .types-repair .grid .service-types .cards .card-block {
+  .services .grid .service-types .cards .card-block {
     margin-bottom: 80px;
   }
   
-  .types-repair .grid .service-types .cards .card-block .card-inner {
+  .services .grid .service-types .cards .card-block .card-inner {
     margin: -133px 70px auto -1px;
   }
 
-  .types-repair .grid .service-types .cards .card-block .card-label {
+  .services .grid .service-types .cards .card-block .card-label {
     font-size: 15px;
     height: 40px;
     padding: 6px 16px;
@@ -1606,8 +1605,8 @@ nav__tel {
 
   /*Leave the comment block-*/
 
-  .types-repair .estimate-form,
-  .types-repair .info {
+  .services .estimate-form,
+  .services .info {
     display: none;
   }
 
@@ -1744,31 +1743,25 @@ nav__tel {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-  body {
-    width: 100%;
-  }
-
   .portfolio-styles {
+    margin-right: 0;
     display: none;
   }
 
   .portfolio .container .portfolio-row-1 {
-    margin: -40px auto;
+
+    margin: -
   }
 
   .portfolio .container .portfolio-row-2 {
-    display: none;
+    margin: 
   }
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
 
-  body {
-    width: 100%;
-  }
-
-  .container {
+.container {
     width: 100%;
   }
 
@@ -1776,16 +1769,16 @@ nav__tel {
     display: none;
   }
 
-  .types-repair .grid .service-types .cards {
+  .services .grid .service-types .cards {
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
-  .types-repair .grid .service-types .cards .card-block {
+  .services .grid .service-types .cards .card-block {
     margin-bottom: 100px;
   }
 
-  .types-repair .estimate-form {
+  .services .estimate-form {
     margin-top: 70px;
   }
 
