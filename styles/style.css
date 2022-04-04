@@ -239,6 +239,10 @@ input.submit-button {
   color: var(--color-primary);
 }
 
+.header .header__content .btn-default {
+  margin-right: 20px;
+}
+
 nav__tel {
   text-decoration-line: underline;
 }
@@ -1747,15 +1751,6 @@ online_control .wrap .first-form .submit-button {
     margin-right: 0;
     display: none;
   }
-
-  .portfolio .container .portfolio-row-1 {
-
-    margin: -
-  }
-
-  .portfolio .container .portfolio-row-2 {
-    margin: 
-  }
 }
 
 
@@ -1767,6 +1762,13 @@ online_control .wrap .first-form .submit-button {
 
   .nav__tel {
     display: none;
+  }
+
+  .header .header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83px;
   }
 
   .services .grid .service-types .cards {
