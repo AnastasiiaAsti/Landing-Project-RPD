@@ -141,6 +141,10 @@ button.btn:hover,
   transition: all 0.3s ease-in-out;
 }
 
+#nav__btn {
+  margin-left: 10px;
+}
+
 input {
   height: 26px;
   border: 0;
@@ -1364,7 +1368,7 @@ online_control .wrap .first-form .submit-button {
 /*MEDIA*/
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 936px) {
   .container {
     max-width: 100%;
   }
@@ -1752,7 +1756,7 @@ online_control .wrap .first-form .submit-button {
   }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 937px) and (max-width: 1024px) {
 
   .portfolio-styles {
     margin-right: 0;
@@ -1772,7 +1776,7 @@ online_control .wrap .first-form .submit-button {
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 937px) and (max-width: 1440px) {
 
 .container {
     width: 100%;
