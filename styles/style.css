@@ -1763,12 +1763,6 @@ online_control .wrap .first-form .submit-button {
     display: none;
   }
 
-  .header .header__content {
-    justify-content: center;
-    align-items: center;
-    height: 83px;
-  }
-
   .header .header__content .nav__list {
     display: none;
   }
