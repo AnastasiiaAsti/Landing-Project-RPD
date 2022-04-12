@@ -197,7 +197,7 @@ input.submit-button {
 
 .header .header__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 83px;
 }
@@ -887,9 +887,9 @@ online_control .wrap .first-form .submit-button {
   display: none;
 }
 
-.services .estimate-form .estimate-submit #boxed-form .btn--submit {
+.services .estimate-form .estimate-submit #boxed-form #btn-measure {
   max-width: 213px !important;
-  float: right;
+  float: right !important;
 }
 
 .services .info {
@@ -1363,6 +1363,7 @@ online_control .wrap .first-form .submit-button {
 
 /*MEDIA*/
 
+
 @media screen and (max-width: 768px) {
   .container {
     max-width: 100%;
@@ -1370,6 +1371,7 @@ online_control .wrap .first-form .submit-button {
 
   .header .header__content {
     height: 57px;
+    justify-content: space-between;
   }
   .header .header__content .nav__list {
     display: none;
@@ -1577,6 +1579,11 @@ online_control .wrap .first-form .submit-button {
     top: 0;
   }
 
+  .online-video .play {
+    max-width: 57px;
+    margin: auto;
+  }
+
 
   /*Block Repair types*/
 
@@ -1751,24 +1758,24 @@ online_control .wrap .first-form .submit-button {
     margin-right: 0;
     display: none;
   }
+
+  .header .header__content {
+    justify-content: center;
+    align-items: center;
+    height: 83px;
+  }
+
+  .header .header__content .nav__list {
+    display: none;
+  }
 }
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
 
 .container {
     width: 100%;
-  }
-
-  .nav__tel {
-    display: none;
-  }
-
-  .header .header__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 83px;
   }
 
   .services .grid .service-types .cards {
