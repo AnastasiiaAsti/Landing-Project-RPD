@@ -142,7 +142,7 @@ button.btn:hover,
 }
 
 #nav__btn {
-  margin-left: 10px;
+  margin-left: 45px;
 }
 
 input {
@@ -951,15 +951,17 @@ online_control .wrap .first-form .submit-button {
 }
 
 .portfolio .container .portfolio-styles {
-  margin: 137px 246px 0 auto;
+  margin-top: 117px;
   z-index: 1;
 }
 
 .portfolio .container .portfolio-styles h3 {
   color: var(--color-primary);
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 37px;
   margin-bottom: 47px;
+  padding-left: 40px;
   margin-top: 0;
 }
 
@@ -970,7 +972,7 @@ online_control .wrap .first-form .submit-button {
 }
 
 .portfolio.container .list {
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -996,7 +998,7 @@ online_control .wrap .first-form .submit-button {
 }
 
 .portfolio .container .portfolio-row-1 {
-  margin: -40px 45px 0 0;
+  margin: -40px 45px 0 auto;
 }
 
 .portfolio .container .portfolio-row-1 .responsive-nav {
@@ -1005,6 +1007,7 @@ online_control .wrap .first-form .submit-button {
 
 .portfolio .container .portfolio-row-2 {
   margin-top: -112px;
+  margin-right: 102px;
 }
 
 /*Testimonials*/
@@ -1368,7 +1371,7 @@ online_control .wrap .first-form .submit-button {
 /*MEDIA*/
 
 
-@media screen and (max-width: 936px) {
+@media screen and (max-width: 984px) {
   .container {
     max-width: 100%;
   }
@@ -1756,11 +1759,18 @@ online_control .wrap .first-form .submit-button {
   }
 
 
-@media screen and (min-width: 937px) and (max-width: 1024px) {
+@media screen and (min-width: 985px) and (max-width: 1024px) {
 
-  .portfolio-styles {
-    margin-right: 0;
-    display: none;
+  .portfolio .container .portfolio-styles {
+    display: none !important;
+  }
+
+  .portfolio .container .portfolio-row-1 {
+    margin: -40px auto !important;
+  }
+
+  .portfolio .container .portfolio-row-2 {
+    margin: -112px auto 0 !important;
   }
 
   .header .header__content .nav__list {
@@ -1770,7 +1780,7 @@ online_control .wrap .first-form .submit-button {
 
 
 
-@media screen and (min-width: 937px) and (max-width: 1440px) {
+@media screen and (min-width: 985px) and (max-width: 1440px) {
 
 .container {
     width: 100%;
