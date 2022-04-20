@@ -1803,3 +1803,10 @@ online_control .wrap .first-form .submit-button {
     margin: 50px;
   }
 }
+
+@media screen and (min-width: 10px) and (max-width: 357px) {
+
+  .projects .content .project-description .hidden-slider .hidden-img {
+    max-width: 200px;
+  }
+}
