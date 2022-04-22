@@ -32,7 +32,7 @@ h4 {
 h1 {
   font-size: 40px;
   line-height: 53px;
-  transform: uppercase;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -51,10 +51,9 @@ h4 {
   font-size: 18px;
   transform: uppercase;
   margin: 0;
-  font-size: normal;
   font-weight: normal;
   line-height: 25px;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 sup {
@@ -141,7 +140,8 @@ button.btn:hover,
   transition: all 0.3s ease-in-out;
 }
 
-#nav__btn {
+#nav__btn,
+#nav__btn2 {
   margin-left: 45px;
 }
 
@@ -247,15 +247,11 @@ input.submit-button {
   margin-right: 20px;
 }
 
-nav__tel {
-  text-decoration-line: underline;
-}
-
 
 /*Hero*/
 
 .hero {
-  background-image: url(/assets/images/hero\ image.png);
+  background-image: url(/assets/images/hero_image.png);
   background-size: cover;
   height: 707px;
   position: relative;
@@ -377,14 +373,12 @@ nav__tel {
   top: 40%;
   left: 0;
   margin-right: 14px;
-  margin-right: 9px;
 }
 
 .projects .content .project-description .hidden-slider a.slider-next  {
   top: 40%;
   right: 0;
   margin-left: 14px;
-  margin-left: 9px;
 }
 
 .projects .content .project-description .hidden-slider a img {
@@ -417,7 +411,6 @@ nav__tel {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  margin-bottom: 0;
   color: var(--color-primary);
   margin: 34px auto 9px;
 }
@@ -509,8 +502,7 @@ nav__tel {
 }
 
 .online_control .wrap h3 {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 18px;.
   margin-bottom: 0;
   line-height: 28px;
   color: var(--color-secondary);
@@ -967,7 +959,7 @@ online_control .wrap .first-form .submit-button {
 
 .portfolio .container .portfolio-styles a {
   font-size: 20px;
-  font-size: 400;
+  font-weight: 400;
   color: var(--color-secondary);
 }
 
@@ -1117,7 +1109,7 @@ online_control .wrap .first-form .submit-button {
 }
 
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-label .label-left {
-  border-right: 1px soild white;
+  border-right: 1px solid white;
 }
 
 .testimonials .testimonial-cards .testimonial-card-block .testimonial-label img,
@@ -1304,7 +1296,6 @@ online_control .wrap .first-form .submit-button {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  margin-bottom: 0;
   text-align: center;
   max-width: 60%;
   margin: auto;
@@ -1338,7 +1329,7 @@ online_control .wrap .first-form .submit-button {
 }
 
 .address .social-icons .list-icon li .icon .icon-insta {
-  background-image: url("/assets/images/icon\ instagram.svg");
+  background-image: url("/assets/images/icon_instagram.svg");
   background-repeat: no-repeat;
   display: flex;
   width: 35px;
