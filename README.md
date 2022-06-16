@@ -1,6 +1,7 @@
 # Landing-Project-RPD
 
 Responsive Landing Page
+Link: https://anastasiiaasti.github.io/Landing-Project-RPD/
 
 Used Technologies: HTML, CSS
 
