@@ -251,7 +251,7 @@ input.submit-button {
 /*Hero*/
 
 .hero {
-  background-image: url(assets/images/hero_image.png);
+  background-image: url("/assets/images/hero_image.png");
   background-size: cover;
   height: 707px;
   position: relative;
@@ -387,7 +387,7 @@ input.submit-button {
 } 
 
 .projects .content .project-description .hidden-slider .hidden-img {
-  background-image: url(assets/images/slider-image.png);
+  background-image: url("/assets/images/slider-image.png");
   background-size: cover;
   width: 340px;
   height: 200px;
@@ -477,7 +477,7 @@ input.submit-button {
 
 .projects .content .project-image {
   flex-basis: 50%;
-  background-image: url(assets/images/slider-image.png);
+  background-image: url("/assets/images/slider-image.png");
   background-size: cover;
 }
 
@@ -714,7 +714,7 @@ online_control .wrap .first-form .submit-button {
 
 .services .estimate-form {
   margin: 75px auto 325px;
-  background-image: url(assets/images/background.svg);
+  background-image: url("/assets/images/background.svg");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 800px;
@@ -920,7 +920,7 @@ online_control .wrap .first-form .submit-button {
 /*Portfolio*/
 
 .portfolio {
-  background-image: url(assets/images/background2.svg);
+  background-image: url('/assets/images/background2.svg');
   background-size: cover;
   position: relative;
   color: var(--color-secondary);
@@ -1011,7 +1011,7 @@ online_control .wrap .first-form .submit-button {
 
 .testimonials:before {
   content: "";
-  background-image: url(assets/images/building-2.svg);
+  background-image: url('/assets/images/building-2.svg');
   background-repeat: repeat-x;
   background-position: left bottom;
   background-size: 628px;
@@ -1132,7 +1132,7 @@ online_control .wrap .first-form .submit-button {
   max-width: 100%;
   height: auto;
   position: relative;
-  background-image: url(assets/images/Background-end.svg);
+  background-image: url('/assets/images/Background-end.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1319,7 +1319,7 @@ online_control .wrap .first-form .submit-button {
 
 .address .social-icons .list-icon li .icon .icon-mail {
   position: relative;
-  background-image: url("assets/images/icon-envelope.svg");
+  background-image: url("/assets/images/icon-envelope.svg");
   background-repeat: no-repeat;
   display: flex;
   width: 35px;
